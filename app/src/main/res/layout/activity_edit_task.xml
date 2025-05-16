@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/change_task_title"
+        android:text="@string/activity_name"
+        android:labelFor="@id/change_task_title"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/activity_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/task_descriptions"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/enter_activity_details"
+        android:labelFor="@id/enter_activity_details"
+        android:inputType="text"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_task"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/save_changes"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/cancel_changes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/cancel"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/delete_task"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/delete"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>
